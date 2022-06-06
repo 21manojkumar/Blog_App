@@ -16,6 +16,7 @@ public class BlogAppApisApplication implements CommandLineRunner {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(BlogAppApisApplication.class, args);
+		System.out.println("Hello Manoj");
 	}
 	@Bean
 	public ModelMapper modelmapper() {
