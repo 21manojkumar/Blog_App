@@ -49,8 +49,7 @@ public class CategoryController {
 		 this.categoryService.deleteCategory(catId);
 		return new ResponseEntity<ApiResponse>(new ApiResponse("category "
 				+ "is deleted",true),HttpStatus.OK);
-		
-		
+			
 	}
 	@GetMapping("/{catId}")
 	public ResponseEntity<CategoryDto> getCategory(@PathVariable Integer catId)

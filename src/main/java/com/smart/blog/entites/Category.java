@@ -16,6 +16,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 
 @Getter
@@ -24,6 +25,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name="categories")
+
 public class Category {
 
 	@Id

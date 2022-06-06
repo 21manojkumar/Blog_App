@@ -1,11 +1,14 @@
 package com.smart.blog.payloads;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 import com.smart.blog.entites.Category;
+import com.smart.blog.entites.Comment;
 import com.smart.blog.entites.User;
 
 public class PostDto {
@@ -29,7 +32,7 @@ public class PostDto {
 	private User user;
 	
 	
-	
+	private Set<CommentsDto> comments=new HashSet<>();
 	
 	
 	
